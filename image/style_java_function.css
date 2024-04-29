@@ -1,0 +1,8 @@
+*{
+    font-family : "lucida handwriting" , "Itim" , cursive ;
+    box-sizing: border-box;
+}
+#picture{
+    width: 50%;
+    border-radius: 10% 1% 10% 1%;
+}
