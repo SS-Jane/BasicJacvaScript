@@ -49,6 +49,31 @@ console.log(price1,",",typeof(price1))
 let price2 = 2057.25.toString();
 console.log(price2,",",typeof(price2))
 
+// Array syntex 1
+let alphabet1 = "a" ,alphabet2 = "b", alphabet3 = "c", alphabet4 = "d";
+
+console.log(alphabet3);
+
+let alphabet = Array("a","b","c","d","e","f");
+console.log("alphabet :",alphabet);
+console.log("Array index[2] :",alphabet[2]);
+
+// Array syntex 2
+let color = ["red","green","blue","black","white"];
+
+console.log("Color :",color);
+console.log("Color index[2] :", color[2]);
+
+// Operator
+console.log("Price:",price1,"vat:",vat,"Vat amount :",price1*vat,"Pay :",(price1+(price1*vat)));
+
+console.log("price1==price2 :",price1==price2);
+console.log("price1!=age3 :",price1!=age3);
+console.log("color[1]==green :",color[1]=="green");
+console.log("age==age2 :",age==age2);
+console.log("age>age2 :",age>age2);
+console.log("age<age2 :",age<age2);
+console.log("age!=age2 :",age!=age2);
 
 
 
