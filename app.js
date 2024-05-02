@@ -75,5 +75,39 @@ console.log("age>age2 :",age>age2);
 console.log("age<age2 :",age<age2);
 console.log("age!=age2 :",age!=age2);
 
+// Operator compare
 
+let score = 80;
+
+console.log(score > 80 && score <= 100,"A")
+console.log(score > 60 && score <= 80,"B")
+
+// Operator Prefix Posefix
+let day = 0, result_day;
+
+console.log("Defult Day:",day);
+result_day=++day;
+console.log("After Prefix ++day :",result_day);
+result_day=result_day++;
+console.log("After Posefix day++ :",result_day);
+
+console.log("Day now :",result_day);
+result_day=--result_day;
+console.log("After Prefix ++day :",result_day);
+result_day=result_day--;
+console.log("After Posefix day++ :",result_day);
+result_day=++result_day;
+result_day=++result_day;
+// Compound Assignment
+console.log("Day now :",result_day);
+result_day+=result_day;
+console.log("After += :",result_day);
+result_day+=result_day;
+console.log("After += :",result_day);
+result_day*=result_day;
+console.log("After *= :",result_day);
+result_day/=result_day;
+console.log("After /= :",result_day);
+result_day-=result_day;
+console.log("After -= :",result_day);
 
