@@ -128,3 +128,19 @@ else{
 // control structure : condition if-else ternary
 let gender = age <= 15 ? "Boy or Girl" : age > 15 ? "Man or Woman" : "Please Enter your age" ; 
 console.log(gender)
+
+// control structure : condition switch case
+let status = 2;
+
+let light;
+
+switch (status) {
+    case 0: light = "turn-off";
+        break;
+    case 1: light = "turn-on";
+        break;
+    default: light = "Disconnect";
+        break;
+}
+
+console.log(light);
