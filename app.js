@@ -111,3 +111,36 @@ console.log("After /= :",result_day);
 result_day-=result_day;
 console.log("After -= :",result_day);
 
+//control structure : condition
+let result_age = (age == 15);
+
+console.log("Age :",age);
+if(age <= 15){
+    console.log("Boy and Girl");
+}
+else if(age > 15){
+    console.log("Man or Woman");
+}
+else{
+    console.log("Please Enter you Age");
+}
+
+// control structure : condition if-else ternary
+let gender = age <= 15 ? "Boy or Girl" : age > 15 ? "Man or Woman" : "Please Enter your age" ; 
+console.log(gender)
+
+// control structure : condition switch case
+let status = 2;
+
+let light;
+
+switch (status) {
+    case 0: light = "turn-off";
+        break;
+    case 1: light = "turn-on";
+        break;
+    default: light = "Disconnect";
+        break;
+}
+
+console.log(light);
