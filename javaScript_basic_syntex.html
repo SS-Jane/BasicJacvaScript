@@ -10,7 +10,7 @@
     <!-- <script src="function.js"></script> -->
     
 </head>
-<body>
+<body onload="welcome()">
     <div class="dark">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             Porro perspiciatis a nihil explicabo itaque tempora natus ratione consectetur assumenda quis.</p>
@@ -37,15 +37,52 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Nostrum voluptates dolorem, recusandae consequatur adipisci libero sunt nobis numquam sint minima?</p>
     </div>
-    <div id="box2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Commodi quod libero temporibus adipisci nostrum excepturi veniam dolorum accusantium est nam.</p>
-    </div>
+    
     <button onclick="addStyle()">Add style</button>
     <button onclick="removeStyle()">Delete style</button>
     <button onclick="switchStyle()">Switch style</button>
+
+    <div id="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi quod libero temporibus adipisci nostrum excepturi veniam dolorum accusantium est nam.</p>
+        <label for="Enter your name">Name</label>
+        <input type="text" 
+            placeholder="Enter your name" 
+            onfocus="highLight2(this)" 
+            onblur="unHighLight2(this)"
+        />
+        <select name="Web tool" id="language2" onchange="getMenu()">
+            <option value="JavaScript">JavaScript</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+        </select>
+        <p id="languageDisplay2"></p>
+        <a href="" onmouseover="highLight2(this)" onmouseout="unHighLight2(this)">Web1</a>
+        <a href="" onmouseover="highLight2(this)" onmouseout="unHighLight2(this)">web2</a>
+    </div>
+
+    <div id="box3">
+        <p id="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi quod libero temporibus adipisci nostrum excepturi veniam dolorum accusantium est nam.</p>
+        <label for="Enter your name">Name</label>
+        <input type="text" 
+            placeholder="Enter your name" 
+            onfocus="highLight3(this)" 
+            onblur="unHighLight3(this)"
+        />
+        <select name="Web tool" id="language3">
+            <option value="JavaScript">JavaScript</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+        </select>
+        <p id="languageDisplay3"></p>
+
+        <a href="" id="link3">Web1</a>
+        <a href="" id="link3">web2</a>
+    </div>
     <script src="htmldom.js"></script>
     <script src="cssDom.js"></script>
     <script src="eventDom.js"></script>
+    <script src="eventListener.js"></script>
 </body>
 </html>
