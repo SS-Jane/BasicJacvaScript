@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Basic</title>
+    <link rel="stylesheet" href="style.css">
     <!-- internal javascript type -->
-    <script src="/app.js"></script>
-    <script src="function.js"></script>
+    <!-- <script src="/app.js"></script> -->
+    <!-- <script src="function.js"></script> -->
+    
 </head>
 <body>
+    <div class="dark">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Porro perspiciatis a nihil explicabo itaque tempora natus ratione consectetur assumenda quis.</p>
+    </div>
+    <div>
+        <ul id="menu">
+            <h1>Food</h1>
+            <button onclick="addItem()">เพิ่มเมนูอาหาร</button>
+            <button onclick="deleteItem()">ลบเมนูอาหาร</button>
+        </ul>
+    </div>
+    
     <button onclick="message()">Click here</button><br>
     <button onclick="displayName()">Display</button>
-    
+    <button onclick="deleteData()">Delete</button>
+
+    <p id="title">SuperJane</p>
+    <p id="demo">SuperJane</p>
+    <button onclick="display()">แสดงข้อมูล</button>
+    <button onclick="changeStyle()">เปลี่ยนสีข้อความ</button>
+    <button onclick="darkmode()">dark mode</button>
+    <button onclick="lightmode()">light mode</button>
+    <div id="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Nostrum voluptates dolorem, recusandae consequatur adipisci libero sunt nobis numquam sint minima?</p>
+    </div>
+    <div id="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi quod libero temporibus adipisci nostrum excepturi veniam dolorum accusantium est nam.</p>
+    </div>
+    <button onclick="addStyle()">Add style</button>
+    <button onclick="removeStyle()">Delete style</button>
+    <button onclick="switchStyle()">Switch style</button>
+    <script src="htmldom.js"></script>
+    <script src="cssDom.js"></script>
+    <script src="eventDom.js"></script>
 </body>
 </html>
